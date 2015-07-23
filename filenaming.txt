@@ -1,0 +1,1 @@
+[Project]-[Name]-v[00].[00]-[YY][MM][DD]-[_extrainfo].[extention]
