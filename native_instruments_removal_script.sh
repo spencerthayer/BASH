@@ -7,16 +7,16 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   echo
   echo "Uninstalling..."
-  rm -rf /Applications/Native\ Instruments
-  rm -f /Library/Preferences/com.native-instruments.*.plist
-  rm -rf /Library/Audio/Plug-Ins/Components/Maschine*
-  rm -rf /Library/Audio/Plug-Ins/VST/Maschine*
-  rm -rf /Library/Application\ Support/Digidesign/Plug-Ins/Maschine*
-  rm -rf /Library/Application\ Support/Avid/Audio/Plug-Ins/Maschine*
-  rm -rf /Library/Application\ Support/Native\ Instruments
-  rm -f ~/Library/Preferences/com.native-instruments.*.plist
-  rm -rf ~/Library/Application\ Support/Native\ Instruments
-  rm -rf /System/Library/Extensions/NIUSB*.kext
+  rm -rfv /Applications/Native\ Instruments
+  rm -fv /Library/Preferences/com.native-instruments.*.plist
+  rm -rfv /Library/Audio/Plug-Ins/Components/Maschine*
+  rm -rfv /Library/Audio/Plug-Ins/VST/Maschine*
+  rm -rfv /Library/Application\ Support/Digidesign/Plug-Ins/Maschine*
+  rm -rfv /Library/Application\ Support/Avid/Audio/Plug-Ins/Maschine*
+  rm -rfv /Library/Application\ Support/Native\ Instruments
+  rm -fv ~/Library/Preferences/com.native-instruments.*.plist
+  rm -rfv ~/Library/Application\ Support/Native\ Instruments
+  rm -rfv /System/Library/Extensions/NIUSB*.kext
   echo
   echo "Repairing Disk Permissions"
   echo
