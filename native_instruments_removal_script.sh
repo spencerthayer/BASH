@@ -1,5 +1,5 @@
 #!/bin/bash
-# This script removes all Native Instruments files.
+# This script removes all Native Instruments files, software, and drivers.
 # https://www.native-instruments.com/en/support/knowledge-base/show/413/how-to-uninstall-native-instruments-software-and-drivers-from-a-mac-os-x-computer/
 read -p "Are you sure you want to uninstall all Native Instruments software and drivers?" -n 1 -r
 echo
