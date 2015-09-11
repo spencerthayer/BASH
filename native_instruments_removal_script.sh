@@ -14,6 +14,7 @@ then
   rm -rf /Library/Application\ Support/Native\ Instruments
   rm -f ~/Library/Preferences/com.native-instruments.*.plist
   rm -rf ~/Library/Application\ Support/Native\ Instruments
+  rm -f /System/Library/Extensions/NIUSB*.kext
   echo "EXIT"
 fi
 exit
