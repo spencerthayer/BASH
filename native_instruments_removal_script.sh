@@ -18,6 +18,10 @@ then
   rm -rf ~/Library/Application\ Support/Native\ Instruments
   rm -rf /System/Library/Extensions/NIUSB*.kext
   echo
+  echo "Repairing Disk Permissions"
+  echo
+  diskutil repairPermissions /
+  echo
   echo "EXIT"
 fi
 exit
