@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo shutdown -r +1 & osascript -e 'tell application "System Events" to shut down';exit;
+sudo shutdown -r +1 & osascript -e 'tell application "System Events" to restart';exit;
