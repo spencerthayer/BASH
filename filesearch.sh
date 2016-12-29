@@ -1,9 +1,11 @@
 #!/bin/bash
-read -p "Enter directory path (skip for current dir): " dirpath;
-read -p "Enter file name(s): " filename;
+read -p "Enter directory path (blank for current): " dirpath;
+read -p "Enter filename (blank for *): " filename;
 read -p "Enter the term or regex: " pattern;
-# if [ -n "$dirpath" ] else dirpath=".";
+# dirpath="${dirpath:-"."}";
+filename="${filename:-"*"}";
 if [ -n "$filename" ] && [ -n "$pattern" ];
+# if [ -n "$pattern" ];
 then
     echo "COMMAND: grep -inr" "$pattern" "$dirpath""$filename" "| cut -f1,2 -d:";
     result=$(grep -inr $pattern $dirpath$filename | cut -f1,2 -d:);
