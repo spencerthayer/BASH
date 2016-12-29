@@ -5,7 +5,7 @@ read -p "Enter the term or regex: " pattern;
 filename="${filename:-"*"}";
 if [ -n "$filename" ] && [ -n "$pattern" ];
 then
-    echo "COMMAND: grep -inr" "$pattern" "$dirpath""$filename" "| cut -f1,2 -d:";
+    echo "$ grep -inr" "$pattern" "$dirpath""$filename" "| cut -f1,2 -d:";
     result=$(grep -inr $pattern $dirpath$filename | cut -f1,2 -d:);
     echo "$result";
   else
