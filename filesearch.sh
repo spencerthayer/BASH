@@ -8,5 +8,5 @@ then
     result=$(grep -inr $pattern $dirpath$filename | cut -f1,2 -d:);
     echo "$result";
   else
-    echo "ALL FIELDS MUST BE VALID";
+    echo "* * ALL FIELDS MUST BE VALID * *";
 fi
